@@ -32,12 +32,15 @@ $color: #af2b2b;
 
 :root {
   --red: #af2b2b;
+  --gray: #f3f3f3;
 
   --background: white;
-  --header-height: 5rem;
 
+  --header-height: 5rem;
   --header-background: var(--red);
   --header-text: white;
+
+  --footer-background: var(--gray);
 
   --text: black;
 }

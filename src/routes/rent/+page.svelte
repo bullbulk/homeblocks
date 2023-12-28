@@ -1,7 +1,7 @@
 <script>
-      import Intro from "$lib/components/section/IntroMain.svelte";
-      import MainLinks from "$lib/components/section/MainLinks.svelte";
+    import IntroRent from "$lib/components/section/IntroRent.svelte";
+    import Rent from "$lib/components/section/Rent.svelte";
 </script>
 
-<Intro/>
-<MainLinks/>
+<IntroRent/>
+<Rent/>
