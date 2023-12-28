@@ -6,7 +6,7 @@
     $: open = false;
 </script>
 
-<header class="px-12 py-6">
+<header class="px-6 py-6 md:px-12 lg:px-32">
     <div>
         <a class="flex gap-2 items-center" href="/">
             <img alt="HomeBlocks Logo" class="w-7" src="{logo}">

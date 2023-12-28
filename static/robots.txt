@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /houses/
+Allow: /rent/
+Sitemap: /sitemap.xml

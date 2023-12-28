@@ -6,10 +6,10 @@
 
 <style lang="scss">
   .main-links {
-    @apply flex justify-center gap-5 pt-0;
+    @apply flex flex-col md:flex-row justify-center gap-5 pt-0;
 
      & a {
-       @apply text-lg rounded-xl;
+       @apply text-lg rounded-xl text-center;
        color: white;
        padding: 0.5rem 1rem;
        background-color: var(--red);
