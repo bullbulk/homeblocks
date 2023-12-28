@@ -1,32 +1,26 @@
-<script>
-    import github from '$lib/images/github.svg';
-    import telegram from '$lib/images/telegram.svg';
+<script lang="ts">
     import MenuButton from "$lib/components/MenuButton.svelte";
+    import logo from '$lib/images/logo-white.svg';
 
-    $: open = false
+    let open: boolean;
+    $: open = false;
 </script>
 
-<header class="p-6">
+<header class="px-12 py-6">
+    <div>
+        <a class="flex gap-2 items-center" href="/">
+            <img alt="HomeBlocks Logo" class="w-7" src="{logo}">
+            <b>HomeBlocks</b>
+        </a>
+    </div>
+
     <nav class="w-100 px-10 hidden lg:block">
         <ul class="flex gap-10">
-            <li><a href="#intro">Начало</a></li>
+            <li><a href="/">Квартиры</a></li>
+            <li><a href="/houses">Дома</a></li>
+            <li><a href="/rent">Аренда</a></li>
         </ul>
     </nav>
-
-    <div class="socials">
-        <div class="socials__inner">
-            <div class="socials__item">
-                <a href="" target="_blank">
-                    <img alt="GitHub" src="{github}">
-                </a>
-            </div>
-            <div class="socials__item">
-                <a href="" target="_blank">
-                    <img alt="Telegram" src="{telegram}">
-                </a>
-            </div>
-        </div>
-    </div>
 
     <div class="menu flex items-center lg:hidden">
         <MenuButton/>
@@ -38,19 +32,11 @@
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
-    background-color: var(--background);
+    background-color: var(--header-background);
     height: var(--header-height);
+    color: var(--header-text);
     z-index: 10;
-  }
-
-  .socials__inner {
-    @apply px-12 flex gap-5 items-center;
-    justify-content: flex-end;
-
-    & img {
-      width: 2rem;
-    }
   }
 </style>

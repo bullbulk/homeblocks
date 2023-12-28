@@ -1,9 +1,7 @@
 <script>
       import Intro from "$lib/components/section/Intro.svelte";
       import MainLinks from "$lib/components/section/MainLinks.svelte";
-      import Flats from "$lib/components/section/Flats.svelte";
 </script>
 
 <Intro/>
 <MainLinks/>
-<Flats/>

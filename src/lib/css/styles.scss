@@ -1,3 +1,4 @@
+$color: #af2b2b;
 @tailwind base;
 
 @layer base {
@@ -30,11 +31,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #232121;
-  --background-odd: #2e2e2e;
+  --red: #af2b2b;
+
+  --background: white;
   --header-height: 5rem;
 
-  --text: white;
+  --header-background: var(--red);
+  --header-text: white;
+
+  --text: black;
 }
 
 html {
@@ -53,14 +58,9 @@ img {
 
 
 section {
-  @apply px-10 py-8 lg:px-20 lg:py-12;
-  min-height: 100vh;
+  @apply px-8 py-8 md:px-16 md:py-12 lg:px-32 lg:py-16;
 
   & h2 {
     @apply mb-16 lg:mb-20 text-center lg:text-left;
-  }
-
-  &:nth-child(2n) {
-    background: var(--background-odd);
   }
 }
