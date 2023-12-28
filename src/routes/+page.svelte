@@ -5,7 +5,7 @@
       import Meta from "$lib/components/meta/Meta.svelte";
 </script>
 
-<Meta title="HomeBlocks - Квартиры в Нижневартовске"/>
+<Meta title="HomeBlocks - Квартиры в Нижневартовске" description="Купить квартиру в Нижневартовске"/>
 
 <IntroMain/>
 <MainLinks/>
