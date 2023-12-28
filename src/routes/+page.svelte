@@ -1,5 +1,5 @@
 <script>
-      import Intro from "$lib/components/section/Intro.svelte";
+      import IntroMain from "$lib/components/section/IntroMain.svelte";
       import MainLinks from "$lib/components/section/MainLinks.svelte";
       import Flats from "$lib/components/section/Flats.svelte";
       import Meta from "$lib/components/meta/Meta.svelte";
@@ -7,6 +7,6 @@
 
 <Meta title="HomeBlocks - Квартиры в Нижневартовске"/>
 
-<Intro/>
+<IntroMain/>
 <MainLinks/>
 <Flats/>

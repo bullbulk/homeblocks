@@ -5,7 +5,7 @@
 <section class="flats" id="flats">
     {#each flats as flat}
         <div class="flat-card">
-            <img src={flat.image} alt={flat.title}/>
+            <img src={flat.image} alt={flat.description}/>
             <h3>{flat.price}</h3>
             <p class="truncate">{flat.description}</p>
             <p class="pb-4">{flat.address}</p>

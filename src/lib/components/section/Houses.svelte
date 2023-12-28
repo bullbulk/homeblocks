@@ -1,11 +1,11 @@
 <script>
-    import {houses} from "$lib/stores/data.js";
+    import {houses} from "$lib/stores/houses.js";
 </script>
 
 <section class="houses" id="houses">
     {#each houses as house}
         <div class="house-card">
-            <img src={house.image} alt={house.title}/>
+            <img src={house.image} alt={house.description}/>
             <h3>{house.price}</h3>
             <p class="truncate">{house.description}</p>
             <p class="pb-4">{house.address}</p>
